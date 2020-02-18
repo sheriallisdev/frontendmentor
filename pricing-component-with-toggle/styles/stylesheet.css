@@ -1,0 +1,33 @@
+:root {
+  --main-bg-color: #f7f7ff;
+  --linear-gradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%);
+
+  --very-light-grayish-blue: hsl(240, 78%, 98%);
+  --light-grayish-blue: hsl(234, 14%, 74%);
+  --grayish-blue: hsl(233, 13%, 49%);
+  --dark-grayish-blue: hsl(232, 13%, 33%);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
