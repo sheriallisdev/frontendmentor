@@ -1,11 +1,14 @@
 :root {
   --main-bg-color: #f7f7ff;
-  --linear-gradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%);
+  --linear-gradient: hsl(236, 72%, 79%), hsl(237, 63%, 64%);
 
   --very-light-grayish-blue: hsl(240, 78%, 98%);
   --light-grayish-blue: hsl(234, 14%, 74%);
   --grayish-blue: hsl(233, 13%, 49%);
   --dark-grayish-blue: hsl(232, 13%, 33%);
+  --dark-purple: hsl(237, 63%, 64%);
+
+  --white: #ffffff;
 }
 
 html {
@@ -19,9 +22,96 @@ html {
 }
 
 body {
+  position: relative;
   background-color: var(--main-bg-color);
   font-size: 1rem;
   font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  color: var(--grayish-blue);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 62px;
+  margin-bottom: 42px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+.product-card {
+  background-color: var(--white);
+  padding: 36px;
+  margin: 18px;
+  width: 327px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.product-card:nth-child(even) {
+  background: linear-gradient(var(--linear-gradient));
+  color: var(--very-light-grayish-blue);
+}
+
+.product-card:nth-child(even) .product__name,
+.product-card:nth-child(even) .price {
+  color: var(--very-light-grayish-blue);
+}
+
+.product-card:nth-child(even) .product__link {
+  background: var(--white);
+  color: var(--dark-purple);
+}
+
+.product__name {
+  font-size: 1rem;
+  color: var(--grayish-blue);
+}
+
+.price {
+  color: var(--dark-grayish-blue);
+  font-size: 4rem;
+  margin-bottom: 32px;
+  margin-top: 24px;
+}
+
+.features {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.features__item {
+  text-align: center;
+  padding: 16px 0;
+  font-size: 0.9rem;
+  border-top: 1px solid var(--light-grayish-blue);
+}
+
+.features__item:last-of-type {
+  border-bottom: 1px solid var(--light-grayish-blue);
+}
+
+.product__link {
+  background: linear-gradient(var(--linear-gradient));
+  color: var(--very-light-grayish-blue);
+  width: 100%;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 32px;
 }
 
 .hidden {
@@ -31,6 +121,7 @@ body {
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-top: 100px;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
