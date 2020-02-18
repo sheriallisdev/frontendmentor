@@ -24,6 +24,10 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.hidden {
+  display: none;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
