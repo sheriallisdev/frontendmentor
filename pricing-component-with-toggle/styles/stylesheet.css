@@ -63,6 +63,55 @@ h1 {
   margin-bottom: 42px;
 }
 
+.switch {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.switch .switch-body {
+  background: linear-gradient(to right, var(--linear-gradient));
+  width: 54px;
+  border-radius: 50px;
+  position: relative;
+  color: #b5b4c1;
+  font-size: 0.9rem;
+}
+
+.toggle {
+  width: 22px;
+  height: 22px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 4px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.switch.active .switch-body .toggle {
+  transform: translatex(100%);
+}
+
+.switch input[type="checkbox"],
+.switch label {
+  display: none;
+}
+
+.switch-body::before {
+  content: "Annually";
+  left: -100px;
+  position: absolute;
+  transform: translateY(50%);
+}
+
+.switch-body::after {
+  content: "Monthly";
+  top: 0;
+  right: -100px;
+  position: absolute;
+  transform: translateY(50%);
+}
+
 .product-list {
   display: flex;
   flex-wrap: wrap;
