@@ -139,6 +139,8 @@ h1 {
   border: 1px solid transparent;
   padding: 16px;
   margin-top: 32px;
+  transition-property: background, background-color, color;
+  transition: 0.2s ease-in-out;
 }
 
 .product__link:hover,
