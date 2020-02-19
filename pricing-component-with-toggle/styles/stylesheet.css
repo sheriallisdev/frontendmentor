@@ -172,3 +172,36 @@ h1 {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+@media screen and (min-width: 1024px) {
+  .product-list {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .product-card {
+    width: 350px;
+    margin: 0;
+  }
+
+  .product-card:nth-child(1) {
+    border-radius: 8px 0 0 8px;
+  }
+
+  .product-card:nth-child(even) {
+    z-index: 2;
+    height: 500px;
+  }
+
+  .product-card:nth-child(3) {
+    border-radius: 0 8px 8px 0;
+  }
+
+  body::after {
+    background: url(../images/bg-bottom.svg) no-repeat;
+    background-position: 0% 100%;
+    bottom: 0;
+    left: 0px;
+    z-index: -1000;
+  }
+}
