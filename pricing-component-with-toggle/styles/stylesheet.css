@@ -216,3 +216,17 @@ h1 {
     z-index: -1000;
   }
 }
+
+@media screen and (max-width: 340px) {
+  .product-card {
+    width: 85%;
+  }
+
+  .price {
+    font-size: 3rem;
+  }
+
+  .attribution {
+    margin-top: 50px;
+  }
+}
