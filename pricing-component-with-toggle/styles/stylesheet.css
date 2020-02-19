@@ -70,6 +70,13 @@ h1 {
   color: var(--dark-purple);
 }
 
+.product-card:nth-child(even) .product__link:hover,
+.product-card:nth-child(even) .product__link:focus {
+  background: none;
+  color: var(--white);
+  border: 1px solid var(--white);
+}
+
 .product__name {
   font-size: 1rem;
   color: var(--grayish-blue);
@@ -110,8 +117,16 @@ h1 {
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 8px;
+  border: 1px solid transparent;
   padding: 16px;
   margin-top: 32px;
+}
+
+.product__link:hover,
+.product__link:focus {
+  background: var(--white);
+  border: 1px solid var(--dark-purple);
+  color: var(--dark-purple);
 }
 
 .hidden {
