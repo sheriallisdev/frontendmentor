@@ -101,7 +101,7 @@ h1 {
 }
 
 .product__link {
-  background: linear-gradient(var(--linear-gradient));
+  background: linear-gradient(to right, var(--linear-gradient));
   color: var(--very-light-grayish-blue);
   width: 100%;
   font-size: 0.7rem;
