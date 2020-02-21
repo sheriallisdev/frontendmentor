@@ -43,3 +43,32 @@ section {
   padding: 32px;
 }
 
+.section__title {
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.section__subtitle {
+  color: var(--bright-yellow);
+  font-weight: 700;
+}
+
+.join-block {
+  grid-area: join;
+  color: var(--grayish-blue);
+  padding-bottom: 32px;
+  line-height: 1.5;
+}
+
+.join__title {
+  color: var(--cyan);
+}
+
+.join__subtitle {
+  color: var(--bright-yellow);
+  font-weight: 700;
+}
+
+.join .section__title {
+  color: var(--cyan);
+}
