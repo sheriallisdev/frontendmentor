@@ -132,3 +132,18 @@ section {
   opacity: 0.9;
 }
 
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #000;
+  font-weight: 700;
+  color: var(--cyan);
+}
+
+.attribution a:hover {
+  color: var(--green);
+}
+
