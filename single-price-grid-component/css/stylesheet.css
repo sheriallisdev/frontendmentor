@@ -1,0 +1,45 @@
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+  --green: hsl(179, 47%, 52%);
+  --primary-background: #e6eff6;
+  --white: #fff;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Karla";
+  background-color: var(--primary-background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  border-radius: 8px;
+  background-color: var(--white);
+  margin: 70px 30px;
+  display: grid;
+  grid-template-areas:
+    "join"
+    "subscription"
+    "why-us";
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+section {
+  padding: 32px;
+}
+
