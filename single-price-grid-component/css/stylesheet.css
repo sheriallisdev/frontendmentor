@@ -114,3 +114,21 @@ section {
   color: var(--white);
 }
 
+.why-us-block {
+  grid-area: why-us;
+  background-color: var(--green);
+  color: var(--light-gray);
+  border-radius: 0 0 8px 8px;
+}
+
+.why-us__list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 8px;
+}
+
+.why-us__list li {
+  margin-bottom: 4px;
+  opacity: 0.9;
+}
+
