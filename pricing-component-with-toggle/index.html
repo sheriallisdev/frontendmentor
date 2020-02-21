@@ -11,7 +11,7 @@
       href="./images/favicon-32x32.png"
     />
 
-    <title>Frontend Mentor | Pricing component with toggle</title>
+    <title>Pricing component with toggle</title>
     <link rel="stylesheet" href="./styles/normalize.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap"
@@ -27,16 +27,18 @@
       <!-- Switch -->
 
       <div class="switch">
+        <span class="switch__label">Anually</span>
         <button
           type="button"
           data-action="aria-switch"
-          aria-labelledby="toggle_label"
+          aria-labelledby="switch__label"
           aria-checked="false"
           role="switch"
           class="switch-body"
         >
           <span class="toggle"></span>
         </button>
+        <span class="switch__label">Monthly</span>
       </div>
 
       <!-- Product List -->
@@ -46,8 +48,8 @@
           <h2 class="product__name">
             Basic
           </h2>
+          <span class="price price__annual active">&dollar;199.99</span>
           <span class="price price__monthly">&dollar;19.99</span>
-          <span class="price price__annual">&dollar;199.99</span>
           <ul class="features">
             <li class="features__item">
               500 GB Storage
@@ -66,8 +68,8 @@
           <h2 class="product__name">
             Professional
           </h2>
+          <span class="price price__annual active">&dollar;249.99</span>
           <span class="price price__monthly">&dollar;24.99</span>
-          <span class="price price__annual">&dollar;249.99</span>
           <ul class="features">
             <li class="features__item">
               1 TB Storage
@@ -86,8 +88,8 @@
           <h2 class="product__name">
             Master
           </h2>
+          <span class="price price__annual active">&dollar;399.99</span>
           <span class="price price__monthly">&dollar;39.99</span>
-          <span class="price price__annual">&dollar;399.99</span>
           <ul class="features">
             <li class="features__item">
               2 TB Storage

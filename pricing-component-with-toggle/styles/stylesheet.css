@@ -84,6 +84,10 @@ h1 {
   top: 0;
   left: 22px;
 }
+.switch {
+  display: flex;
+  align-items: center;
+}
 
 .switch-body {
   position: relative;
@@ -97,19 +101,14 @@ h1 {
   font-size: 0.9rem;
 }
 
-.switch-body::before {
-  content: "Annually";
-  left: -100px;
-  position: absolute;
-  transform: translateY(-50%);
+.switch-body:hover {
+  cursor: pointer;
+  opacity: 0.7;
 }
 
-.switch-body::after {
-  content: "Monthly";
-  top: 0;
-  right: -100px;
-  position: absolute;
-  transform: translateY(50%);
+.switch__label {
+  color: #b5b4c1;
+  margin: 0 20px;
 }
 
 .product-list {
@@ -171,14 +170,15 @@ h1 {
 }
 
 .price {
+  display: none;
+}
+
+.price.active {
+  display: block;
   color: var(--dark-grayish-blue);
   font-size: 4rem;
   margin-bottom: 32px;
   margin-top: 24px;
-}
-
-.price__monthly {
-  display: none;
 }
 
 .features {
