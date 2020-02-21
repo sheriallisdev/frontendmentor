@@ -147,3 +147,24 @@ section {
   color: var(--green);
 }
 
+@media screen and (min-width: 640px) {
+  body {
+    min-height: 100vh;
+  }
+
+  main {
+    width: 635px;
+    grid-template-areas:
+      "join join"
+      "subscription why-us";
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .why-us-block {
+    border-radius: 0 0 8px 0;
+  }
+
+  .subscription-block {
+    border-radius: 0 0 0 8px;
+  }
+}
