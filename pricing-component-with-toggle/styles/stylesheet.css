@@ -174,11 +174,17 @@ h1 {
 }
 
 .price.active {
-  display: block;
+  display: inline-flex;
   color: var(--dark-grayish-blue);
   font-size: 4rem;
   margin-bottom: 32px;
   margin-top: 24px;
+}
+
+.price__currency {
+  font-size: 2rem;
+  align-self: center;
+  margin-right: 8px;
 }
 
 .features {
