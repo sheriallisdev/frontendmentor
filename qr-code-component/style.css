@@ -56,6 +56,6 @@ body {
 .card__description {
   font-weight: 400;
   color: var(--blue-400);
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
   padding: 0 1rem;
 }
