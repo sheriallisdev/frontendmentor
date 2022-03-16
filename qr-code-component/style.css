@@ -55,6 +55,7 @@ body {
 
 .card__description {
   font-weight: 400;
+  letter-spacing: 0.1875px;
   color: var(--blue-400);
   margin-bottom: 1.5rem;
   padding: 0 1rem;
